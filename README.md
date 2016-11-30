@@ -27,4 +27,4 @@ A simple http tracking server with separated paths for some requests
 
 ## License and contributions
 
-At this moment Scramjet is released under the terms of GPL-3.
+As of version 2.0 Scramjet is MIT Licensed and so is this module.
