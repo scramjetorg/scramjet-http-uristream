@@ -11,6 +11,10 @@ const getScramjetVersion = (scramjet) => {
 };
 
 const makeServer = (callback, scramjet, server) => {
+    if (scramjet instanceof http.Server) {
+        [scramjet, server] = [require("scramjet"), scramjet];
+    }
+
     var stream = new (getScramjetVersion(scramjet).DataStream)();
     server.on("request", (req, res) => {
         // Set CORS headers

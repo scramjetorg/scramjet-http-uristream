@@ -1,3 +1,28 @@
+Scramjet HTTP UriStream
+-------------------------
+
+A simple HTTP server providing a stream of HTTP URI's sent to it. Clients always receive a `204 No content` status.
+
+## API
+
+The module exposes the following methods:
+
+### scHTTP.uri
+
+`scHTTP.uri([scramjet, ]server)` - a stream of uri strings of all requests made to the server (except for OPTIONS)
+
+Arguments:
+
+* `server` - your HTTP server
+
+### scHTTP.request
+
+`scHTTP.request([scramjet, ]server)` - a stream of all request objects from requests made to the server (except for OPTIONS)
+
+Arguments:
+
+* `server` - your HTTP server
+
 ## Usage
 
 A simple http tracking server with separated paths for some requests
@@ -27,4 +52,4 @@ A simple http tracking server with separated paths for some requests
 
 ## License and contributions
 
-As of version 2.0 Scramjet is MIT Licensed and so is this module.
+As of version 2.0 Scramjet is MIT Licensed and as of 1.0.0 so is this module.
