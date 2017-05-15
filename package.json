@@ -9,7 +9,7 @@
   "homepage": "https://michalcz.github.io/scramjet/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MichalCz/scramjet-http-uristream.git"
+    "url": "https://github.com/signicode/scramjet-http-uristream.git"
   },
   "engines": {
     "node": ">=6"
