@@ -12,11 +12,11 @@
     "url": "https://github.com/signicode/scramjet-http-uristream.git"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   },
   "author": "Signicode / Michał Czapracki <cz@signicode.com>",
   "license": "MIT",
   "dependencies": {
-    "scramjet": "^4.8.0"
+    "scramjet": "^4.10.0"
   }
 }
