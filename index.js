@@ -15,7 +15,7 @@ const makeServer = (callback, scramjet, server) => {
         [scramjet, server] = [require("scramjet"), scramjet];
     }
 
-    var stream = new (getScramjetVersion(scramjet).DataStream)();
+    var stream = new (getScramjetVersion(scramjet).StringStream)();
     server.on("request", (req, res) => {
         // Set CORS headers
     	res.setHeader('Access-Control-Allow-Origin', req.headers.origin || "*");
