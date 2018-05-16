@@ -1,6 +1,8 @@
 Scramjet HTTP UriStream
 -------------------------
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/signicode/scramjet-http-uristream.svg)](https://greenkeeper.io/)
+
 A simple HTTP server providing a stream of HTTP URI's sent to it. Clients always receive a `204 No content` status.
 
 ## API
