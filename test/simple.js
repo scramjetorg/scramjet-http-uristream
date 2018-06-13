@@ -26,11 +26,11 @@ module.exports = {
                 }
             );
 
-        server.listen(8080);
+        server.listen(27180);
 
         request({
             method: "GET",
-            uri: "http://localhost:8080/?for=Xavier&vote=160",
+            uri: "http://localhost:27180/?for=Xavier&vote=160",
         }).catch(
             (e) => test.ok(0, "The server should respond correctly")
         );
