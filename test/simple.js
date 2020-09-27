@@ -1,4 +1,4 @@
-const request = require("request-promise-native");
+const fetch = require("node-fetch");
 const scHTTP = require("../");
 const querystring = require('querystring');
 
@@ -8,7 +8,7 @@ module.exports = {
         test.expect(1);
 
         const server = require("http").createServer();
-        const stream = scHTTP.uri(server)
+        scHTTP.uri(server)
             .parse(x => querystring.parse(x.slice(x.indexOf('?') + 1)))
             .each(console.log)
             .filter((data) => (data && typeof data === "object" && !isNaN(+data.vote) && typeof data.for === "string"))
@@ -28,11 +28,9 @@ module.exports = {
 
         server.listen(27180);
 
-        request({
-            method: "GET",
-            uri: "http://localhost:27180/?for=Xavier&vote=160",
-        }).catch(
-            (e) => test.ok(0, "The server should respond correctly")
-        );
+        fetch("http://localhost:27180/?for=Xavier&vote=160")
+            .catch(
+                (e) => test.ok(0, "The server should respond correctly")
+            );
     }
 };
