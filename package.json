@@ -6,18 +6,18 @@
   "scripts": {
     "test": "./node_modules/.bin/nodeunit test/simple.js"
   },
-  "homepage": "https://michalcz.github.io/scramjet/",
+  "homepage": "https://scramjet.org/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/signicode/scramjet-http-uristream.git"
+    "url": "https://github.com/scramjetorg/scramjet-http-uristream.git"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
-  "author": "Signicode / Michał Czapracki <cz@signicode.com>",
+  "author": "Scramjet / Michał Czapracki <open-source@signicode.com>",
   "license": "MIT",
   "dependencies": {
-    "scramjet": "^4.35.12"
+    "scramjet": "^4.35.13"
   },
   "devDependencies": {
     "node-fetch": "^2.6.1",
