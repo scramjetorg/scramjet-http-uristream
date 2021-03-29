@@ -17,7 +17,7 @@
   "author": "Scramjet / Michał Czapracki <open-source@signicode.com>",
   "license": "MIT",
   "dependencies": {
-    "scramjet": "^4.35.13"
+    "scramjet": "^4.35.14"
   },
   "devDependencies": {
     "node-fetch": "^2.6.1",
